@@ -1,5 +1,8 @@
 layout: sidebar
-style: light
+style: dark
+# layout: stacked
+# layout: default
+# style: light
 
 plugins:
   - jekyll-octicons
@@ -17,18 +20,24 @@ defaults:
       layout: "post"
 
 projects:
-  sort_by: pushed
+  sort_by: 
+    - pushed
+  limit: 6
+  exclude:
+    archived: true
+    forks: false
+    projects:
+    - personal-website
+    - achlys-description
+    - terlplate
+    # - ballgame
+  # sort_by: stars
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 9
-  exclude:
-    archived: false
-    forks: true
-    projects:
-    # - repo-name
 
-# social_media:
+social_media:
+  twitter: IKopest
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
@@ -40,19 +49,22 @@ projects:
   # medium: your_username
   # stackoverflow: your_user_id
   # telegram: your_username
-  # twitter: your_username
   # unsplash: your_username
   # vk: your_username
-  # website: http://your_website_url
+  website: https://ikopest.me
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Erlang/OTP
+    web_url: https://github.com/erlang/otp
+    image_url: http://erlang.org/doc/erlang-logo.png
 
-  - name: Web design
+  - name: Distributed Systems
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: GRiSP
+    web_url: https://grisp.org
+    image_url: https://github.com/Laymer/personal-website/raw/master/assets/grisp400x400.png
+
+  - name: Elixir
+    web_url: https://elixir-lang.org
+    image_url: https://elixir-lang.org/images/logo/logo.png
