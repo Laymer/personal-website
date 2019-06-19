@@ -68,3 +68,5 @@ topics:
   - name: Elixir
     web_url: https://elixir-lang.org
     image_url: https://elixir-lang.org/images/logo/logo.png
+
+theme: jekyll-theme-minimal
